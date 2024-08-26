@@ -123,3 +123,6 @@ console.log(hasEven);
 //Every
 const allEven = numbers.every(num => num % 2 === 0);
 console.log(allEven);
+//Map
+const squareNumbers = numbers.map(num => num ** 2);
+console.log(squareNumbers);
