@@ -68,3 +68,29 @@ if (mark.bmi > john.bmi) {
 } else {
     console.log("Both have the same BMI!");
 }
+
+//Bai 4
+
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const total2 = [];
+for(let i = 0; i < bills2.length; i++) {
+    tips2.push(calcTip(bills2[i]));
+    total2.push(bills2[i] + tips2[i]);
+}
+
+
+//Bonus
+const calcAverage2 = (arr) => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+};
+// test
+const average = calcAverage2(total2);
+console.log(bills2);
+console.log(tips2);
+console.log(total2);
+console.log(average);
