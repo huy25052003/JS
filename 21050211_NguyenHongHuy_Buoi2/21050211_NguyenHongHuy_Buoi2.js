@@ -126,3 +126,13 @@ console.log(allEven);
 //Map
 const squareNumbers = numbers.map(num => num ** 2);
 console.log(squareNumbers);
+//ForEach
+const value = [];
+
+numbers.forEach(number => {
+    if (number > 1) {
+        value.push(number);
+    }
+});
+
+console.log(value);
