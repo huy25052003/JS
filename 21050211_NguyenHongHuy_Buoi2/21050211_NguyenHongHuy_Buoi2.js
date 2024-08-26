@@ -100,4 +100,15 @@ console.log(average);
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log(evenNumbers);
-
+// My filter
+const myFilter = (arr, callback) => {
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (callback(arr[i])) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+};
+const evenNumbers2 = myFilter(numbers, num => num % 2 === 0);
+console.log(evenNumbers2);
