@@ -109,7 +109,7 @@ const myFilter = (arr, callback) => {
         }
     }
     return newArr;
-};
+}; 
 const evenNumbers2 = myFilter(numbers, num => num % 2 === 0);
 console.log(evenNumbers2);
 
@@ -120,3 +120,6 @@ console.log(firstEven);
 //Some
 const hasEven = numbers.some(num => num % 2 === 0);
 console.log(hasEven);
+//Every
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven);
