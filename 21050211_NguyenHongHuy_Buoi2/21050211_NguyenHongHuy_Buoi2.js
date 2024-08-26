@@ -112,3 +112,7 @@ const myFilter = (arr, callback) => {
 };
 const evenNumbers2 = myFilter(numbers, num => num % 2 === 0);
 console.log(evenNumbers2);
+
+//Find
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven);
