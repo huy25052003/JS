@@ -116,3 +116,7 @@ console.log(evenNumbers2);
 //Find
 const firstEven = numbers.find(num => num % 2 === 0);
 console.log(firstEven);
+
+//Some
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven);
