@@ -33,3 +33,38 @@ const tips = bills.map((bill) => calcTip(bill));
 const total = bills.map((bill, index) => bill + tips[index]);
 console.log(bills, tips, total);
 
+//Bai 3
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+mark.bmi = mark.bmi.toFixed(2);
+john.bmi = john.bmi.toFixed(2);
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`);
+} else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
+} else {
+    console.log("Both have the same BMI!");
+}
