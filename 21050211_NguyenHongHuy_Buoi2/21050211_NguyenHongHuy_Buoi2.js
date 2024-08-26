@@ -136,3 +136,15 @@ numbers.forEach(number => {
 });
 
 console.log(value);
+
+//Reduce
+
+const values = numbers.reduce((acc, current) => {
+    if (current > 1) {
+        acc.push(current);
+    }
+    return acc;
+}, []);
+
+console.log(values); 
+
